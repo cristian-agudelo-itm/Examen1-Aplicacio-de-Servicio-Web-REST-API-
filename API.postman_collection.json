@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "1ec530e6-1969-4a2a-84a4-bbaaf3d7f150",
+		"name": "API",
+		"description": "# **📌 Documentación de API - Servicio REST para Computadores**\n\n## **🔹 Introducción**\n\nEste servicio REST permite la gestión de computadores en una base de datos. A través de **Postman**, se pueden realizar operaciones **CRUD** (Create, Read, Update, Delete) sobre los computadores registrados.\n\nLa API expone cinco métodos principales:\n\n- **GET 1** → Consultar todos los computadores.\n    \n- **GET 2** → Consulta un Tipo Computador por id.\n    \n- **POST** → Agregar un nuevo computador.\n    \n- **PUT** → Actualizar información de un computador.\n    \n- **DELETE** → Eliminar un computador.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39039002"
+	},
+	"item": [
+		{
+			"name": "Consultas Video",
+			"item": [
+				{
+					"name": "http://localhost:49969/api/Computadores/eliminar/1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:49969/api/Computadores/eliminar/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49969",
+							"path": [
+								"api",
+								"Computadores",
+								"eliminar",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49969/api/Computadores/consultar/3",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:49969/api/Computadores/consultar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49969",
+							"path": [
+								"api",
+								"Computadores",
+								"consultar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49969/api/Computadores/actualizar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_computador\": 1,\r\n    \"id_tipo\": 3,\r\n    \"procesador_marca\": \"AMD Ryzen 9\",\r\n    \"procesador_numero\": 16,\r\n    \"disco_duro_tamano\": 1024,\r\n    \"memoria_tamano\": 128,\r\n    \"componentes\": \"Mouse inalámbrico, Teclado RGB, Monitor 27 pulgadas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49969/api/Computadores/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49969",
+							"path": [
+								"api",
+								"Computadores",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49969/api/Computadores/agregar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_tipo\": 3,\r\n    \"procesador_marca\": \"Intel Core i9\",\r\n    \"procesador_numero\": 12,\r\n    \"disco_duro_tamano\": 2048,\r\n    \"memoria_tamano\": 64,\r\n    \"componentes\": \"Mouse, Teclado mecánico, Monitor 32 pulgadas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:49969/api/Computadores/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49969",
+							"path": [
+								"api",
+								"Computadores",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:49969/api/Computadores/consultar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:49969/api/Computadores/consultar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49969",
+							"path": [
+								"api",
+								"Computadores",
+								"consultar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:49969/",
+			"type": "string"
+		}
+	]
+}
