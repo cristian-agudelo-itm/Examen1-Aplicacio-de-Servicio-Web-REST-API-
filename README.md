@@ -25,9 +25,13 @@ Este proyecto es una API REST desarrollada en C# con ASP.NET Web API, que permit
 📌 Tecnologías utilizadas
 
 🔹 Lenguaje: C#
+
 🔹 Framework: ASP.NET Web API
+
 🔹 Base de Datos: SQL Server
+
 🔹 ORM: Entity Framework
+
 🔹 Herramientas de Prueba: Postman
 
 
