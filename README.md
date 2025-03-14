@@ -1,8 +1,9 @@
 📌 Examen 1 - Aplicación de Servicio Web (REST API)
 
 📌 Descripción
-
 Este proyecto es una API REST desarrollada en C# con ASP.NET Web API, que permite la gestión de computadores para la agencia de ventas "ITM". La API permite realizar operaciones CRUD sobre la base de datos de computadores, clientes y ventas.
+
+
 
 📌 Funcionalidades
 
@@ -12,6 +13,8 @@ Este proyecto es una API REST desarrollada en C# con ASP.NET Web API, que permit
 ✅ Actualizar la información de un computador (PUT /api/Computadores/actualizar)
 ✅ Eliminar un computador (DELETE /api/Computadores/eliminar/{id})
 
+
+
 📌 Tecnologías utilizadas
 
 🔹 Lenguaje: C#
@@ -20,11 +23,14 @@ Este proyecto es una API REST desarrollada en C# con ASP.NET Web API, que permit
 🔹 ORM: Entity Framework
 🔹 Herramientas de Prueba: Postman
 
+
+
 📌 Requisitos para ejecutar el proyecto
 
 🔹 Tener instalado Visual Studio 2022
 🔹 SQL Server para la base de datos
 🔹 Postman para pruebas de API
+
 
 📌 Autores
 
