@@ -11,9 +11,13 @@ Este proyecto es una API REST desarrollada en C# con ASP.NET Web API, que permit
 📌 Funcionalidades
 
 ✅ Consultar todos los computadores (GET /api/Computadores/consultar)
+
 ✅ Consultar un TipoComputador por ID (GET /api/Computadores/consultar/{id})
+
 ✅ Agregar un nuevo computador (POST /api/Computadores/agregar)
+
 ✅ Actualizar la información de un computador (PUT /api/Computadores/actualizar)
+
 ✅ Eliminar un computador (DELETE /api/Computadores/eliminar/{id})
 
 
